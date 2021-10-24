@@ -1,3 +1,9 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
 .button {
 	padding: 1.2em;
 	font-size: 1.3em;
@@ -6,4 +12,15 @@
 .decimal {
 	width: 90%;
 	font-size: 2em;
+}
+
+@media only screen and (max-width: 420px) {
+	.button {
+		padding: 0.9em;
+		font-size: 0.8em;
+	}
+
+	.decimal {
+		font-size: 1.2em;
+	}
 }
